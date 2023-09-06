@@ -1,0 +1,21 @@
+h1{
+font-family: Helvetica, sans-serif;
+font-weight: bold;
+letter-spacing: -0.025em;
+line-height: 80%;
+}
+
+
+
+ /* smaller cellphones: */
+ @media screen and (max-width: 769px){
+ }
+ 
+ /* large screen laptop: */
+ @media screen and (min-width:1349px){
+ }
+ 
+ /* 4k: */
+ @media screen and (min-width:2449px){
+
+ }
