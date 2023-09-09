@@ -1,0 +1,94 @@
+.main{
+    text-align: center;
+    display:grid;
+    align-content: center;   
+    margin-top:80vw;
+}
+
+body{
+    background-color:white;
+}
+
+h1{
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    color:white;
+    font-size:200%;
+}
+
+h2{
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    font-size:30%;
+    text-transform: uppercase;
+    color:white;
+}
+.sub{
+    text-align:center;
+    animation: opacity 2.5s infinite;
+
+}
+
+@keyframes opacity{
+    0% {
+        opacity: 100%;
+    }
+    20%{
+         opacity:10%;
+    }
+    100% {
+        opacity: 100%;
+    }
+}
+.fadein h1 {
+    margin: 0 auto; 
+    letter-spacing: 0em; 
+    animation: 
+    fadein 1.5s;
+  }
+
+@keyframes fadein {
+    0%{
+        opacity:0%
+    }
+    80%{
+        opacity:100%;
+    }
+  }
+  
+a{
+    text-decoration: none;
+}
+
+.start:hover{
+    filter:blur(2px);
+    transition-delay: 0.15s;
+}
+
+  body{
+    background-color: black;
+  }
+
+   /* smaller cellphones: */
+ @media screen and (max-width: 769px){
+    h1{
+        font-size: 200%;
+    }
+    
+ }
+ 
+ /* ipad+ large laptop: */
+ @media screen and (min-width:1023px){
+    .main{
+        margin-top:30vw;    
+    }
+}
+
+
+ /* 4k: */
+ @media screen and (min-width:2449px){
+    .main{
+        margin-top:15vw;    
+    }
+ }
