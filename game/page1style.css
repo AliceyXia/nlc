@@ -1,0 +1,64 @@
+  body{
+    background-color:black;
+  } 
+   
+.main{
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    color:white;
+
+    
+    margin-top:50vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: sticky;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+   }
+   
+   a{
+    text-decoration: none;
+}
+
+.blur{
+    animation: blur 1.5s ;
+}
+
+@keyframes blur {
+    0%{
+        filter:blur(2px);
+        opacity:30%;
+    }
+    100%{
+        filter:blur(1px);
+        opacity:100%;
+    }
+  }
+   
+   /* smaller cellphones: */
+   @media screen and (max-width: 769px){
+
+ }
+ 
+ /* ipad*/
+ @media screen and (min-width:1023px){
+    .main{
+        margin-top:30vw;
+    }
+}
+
+ /* large laptop*/
+ @media screen and (min-width:1349px){
+    .main{
+        margin-top:24.5vw;
+    }
+}
+
+ /* 4k: */
+ @media screen and (min-width:2449px){
+
+ }
