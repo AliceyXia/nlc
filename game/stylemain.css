@@ -76,9 +76,10 @@ a{
     text-decoration: none;
 }
 
-  body{
+body{
     background-color: black;
   }
+
 
    /* smaller cellphones: */
  @media screen and (max-width: 769px){
