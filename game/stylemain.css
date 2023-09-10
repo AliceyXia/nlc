@@ -2,7 +2,7 @@
     text-align: center;
     display:grid;
     align-content: center;   
-    margin-top:80vw;
+    margin-top:70vw;
 }
 
 body{
@@ -56,14 +56,24 @@ h2{
         opacity:100%;
     }
   }
-  
-a{
-    text-decoration: none;
+
+.blur{
+    animation: blur 2.5s;
 }
 
-.start:hover{
-    filter:blur(2px);
-    transition-delay: 0.15s;
+  @keyframes blur {
+    0%{
+        filter:blur(2px);
+        opacity:30%;
+    }
+    100%{
+        filter:blur(1px);
+        opacity:100%;
+    }
+  }
+
+a{
+    text-decoration: none;
 }
 
   body{
@@ -75,13 +85,19 @@ a{
     h1{
         font-size: 200%;
     }
-    
  }
  
- /* ipad+ large laptop: */
+ /* ipad: */
  @media screen and (min-width:1023px){
     .main{
         margin-top:30vw;    
+    }
+}
+
+ /* large laptop*/
+ @media screen and (min-width:1349px){
+    .main{
+        margin-top:30vw;
     }
 }
 
@@ -90,5 +106,8 @@ a{
  @media screen and (min-width:2449px){
     .main{
         margin-top:15vw;    
+    }
+    h1{
+        font-size: 200%;
     }
  }
